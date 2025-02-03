@@ -10,23 +10,54 @@ const Projects = () => {
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard
-          src="/pacman.png"
-          title="Classic Pacman Arcade"
-          description="This was the first project I built using python pybag library. I used various dsa concepts to built it from scratch"
-        />
-        <ProjectCard
-          src="/signlingo.png"
-          title="Sign Languague Learning Platform"
-          description="streamlit based web-app for teaching sign language through real-time hand gesture recognition"
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 p-10">
+        <div className="flex-1">
+          <ProjectCard
+            src="/learnify.png"
+            title="Learnify"
+            description="LearniFy is an Hackathon winning AI-powered learning platform built using MERN Stack that enhances education through assessments, gamification, and inclusivity, offering an engaging experience for students and teachers."
+          />
+        </div>
+        <div className="flex-1">
+          <ProjectCard
+            src="/shikshasangam.jpg"
+            title="ShikshaSangam"
+            description="Cross-platform app for student-college alumni interaction built on React, Django and React Native for the Technical Education Department of Rajasthan"
+          />
+        </div>
+        
+        <div className="flex-1">
+          <ProjectCard
+            src="/algograph.png"
+            title="Algograph DSA learning platform"
+            description="Algograph built using Next.js is a hackathon winning website which helps student learn DSA using visualization, quizes and one-platform coding sheets."
+          />
+        </div>
       </div>
+      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+        <div className="flex-1">
+          <ProjectCard
+            src="/signlingo.png"
+            title="Sign Language Learning Platform"
+            description="Streamlit-based web app for teaching sign language through real-time hand gesture recognition"
+          />
+        </div>
+        <div className="flex-1">
+          <ProjectCard
+            src="/fit-track.png"
+            title="Fit-Track"
+            description="Build using MERN stack fittrack allows users to log workouts, meals, track progress, and receive personalized health tips to help achieve their fitness goals."
+          />
+        </div>
+        <div className="flex-1">
+          <ProjectCard
+            src="/pacman.png"
+            title="Classic Pacman Arcade"
+            description="This was the first project I built using python pybag library. I used various dsa concepts to build it from scratch"
+          />
+        </div>
+      </div>
+      
     </div>
   );
 };

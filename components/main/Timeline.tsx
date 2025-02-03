@@ -28,7 +28,7 @@ export function TimelineDemo() {
   content: (
     <div>
       <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
-        Winner of NIT Hacks 7.0 National Level Hackathon organised by NIT Silchar.
+        Winner of NIT Hacks 7.0 National Level Hackathon organised by NIT Silchar among 150+ teams.
       </p>
       <div>
         <Image
@@ -62,7 +62,7 @@ export function TimelineDemo() {
   ),
       },
 {
-  title: "2023",
+  title: "2025",
   content: (
     <div>
       <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
@@ -70,7 +70,7 @@ export function TimelineDemo() {
       </p>
       <div>
         <Image
-          src="/eduhacks.jpg"
+          src="/algograph.jpg"
           alt="startup template"
           width={400}
           height={600} 
