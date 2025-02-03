@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -46,12 +45,14 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-base sm:text-lg text-gray-400 my-5 max-w-full md:max-w-[600px] text-center md:text-start mx-auto md:mx-0"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a developer with experience in building Fullstack Website & Generative-AI 
         </motion.p>
+
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] self-center md:self-start"
+          className="p-3 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] self-center md:self-start"
+          href="https://github.com/ShubhamKarampure"
+          target="_blank" 
         >
           Learn More!
         </motion.a>
@@ -62,7 +63,7 @@ const HeroContent = () => {
         className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[500px] h-full flex justify-center items-center"
       >
         <div className="flex justify-center border border-hidden rounded-3xl p-4 w-full h-[300px] sm:h-[400px] md:h-[500px] text-center">
-          <AIPlaceholder/>
+          <AIPlaceholder />
         </div>
       </motion.div>
     </motion.div>
