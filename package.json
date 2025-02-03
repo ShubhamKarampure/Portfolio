@@ -1,0 +1,47 @@
+{
+  "name": "spaceportfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "@lottiefiles/dotlottie-react": "^0.12.3",
+    "@tabler/icons-react": "^3.29.0",
+    "classname": "^0.0.0",
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "install": "^0.13.0",
+    "motion": "^12.0.6",
+    "next": "13.5.6",
+    "npm": "^11.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.11.0",
+    "react-spinners": "^0.15.0",
+    "sass": "^1.83.4",
+    "tailwind-merge": "^3.0.1",
+    "three-globe": "^2.41.6"
+  },
+  "devDependencies": {
+    "@react-three/drei": "^9.121.4",
+    "@react-three/fiber": "^9.0.0-alpha.8",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.6",
+    "framer-motion": "^10.16.4",
+    "maath": "^0.10.4",
+    "postcss": "^8",
+    "react-intersection-observer": "^9.5.2",
+    "tailwindcss": "^3",
+    "three": "^0.157.0",
+    "typescript": "^5"
+  }
+}
