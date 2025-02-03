@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'leetcard.jacoblin.cool', // Add this entry as well
       },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com', // Add this entry as well
+      },
 
     ],
   },

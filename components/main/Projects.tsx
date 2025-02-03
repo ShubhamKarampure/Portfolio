@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
-import { TimelineDemo } from "./Timeline";
 
 const Projects = () => {
   return (
@@ -13,14 +12,14 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/pacman.png"
+          title="Classic Pacman Arcade"
+          description="This was the first project I built using python pybag library. I used various dsa concepts to built it from scratch"
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/signlingo.png"
+          title="Sign Languague Learning Platform"
+          description="streamlit based web-app for teaching sign language through real-time hand gesture recognition"
         />
         <ProjectCard
           src="/SpaceWebsite.png"
@@ -28,7 +27,6 @@ const Projects = () => {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       </div>
-       
     </div>
   );
 };
