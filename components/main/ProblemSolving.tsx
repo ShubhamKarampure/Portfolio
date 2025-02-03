@@ -22,12 +22,15 @@ const LeetCodeBadge = () => {
 const ProblemSolving = () => {
   
   return (
+    <section
+      id="dsa"
+    >
     <div className="flex flex-row relative items-center justify-center min-h-screen w-full h-full">
       <div className="absolute w-auto h-aut0 top-0 z-[5]">
   <motion.div
     variants={slideInFromTop}
     className="text-[40px]  font-semibold text-center text-gray-200"
-  >
+    >
     Passionate about
     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
       {" "}
@@ -40,6 +43,7 @@ const ProblemSolving = () => {
    
       <HeroScrollDemo/>
     </div>
+    </section>
   );
 };
 

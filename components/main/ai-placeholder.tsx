@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PlaceholdersAndVanishInput } from "../sub/vanish-placeholder";
 import { TextGenerateEffect } from '../sub/text-generate-effect';
 import { SyncLoader } from 'react-spinners';
-const API_URL = 'https://resume-api-a4s2.onrender.com/about-me';
+const API_URL = 'https://resume-api-one.vercel.app/about-me';
 
 export function AIPlaceholder(): JSX.Element {
   const [message, setMessage] = useState<string>("Ask anything about me!");
