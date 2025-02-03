@@ -5,7 +5,9 @@ import Image from "next/image";
 
 export function HeroScrollDemo() {
     return (
-      
+      <section
+      id="DSA"
+    >
             
     <div className="flex flex-col overflow-hidden">
       <ContainerScroll
@@ -26,6 +28,6 @@ export function HeroScrollDemo() {
 
       </ContainerScroll>
     </div>
-    
+      </section>
   );
 }
