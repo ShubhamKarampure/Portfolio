@@ -65,7 +65,7 @@ export function TimelineDemo() {
   title: "2025",
   content: (
     <div>
-      <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-normal mb-8">
+      <p className="text-neutral-800 dark:text-neutral-200 text-lg md:text-xl font-normal ">
         Runner ups in frontend Oddsey organised by ASCES S.P.I.T. among 60+ teams
       </p>
       <div>
@@ -81,9 +81,11 @@ export function TimelineDemo() {
   ),
 },
   ];
-  return (
+    return (
+      <section id="certificates">      
     <div className="w-full">
       <Timeline data={data} />
     </div>
+      </section>
   );
 }

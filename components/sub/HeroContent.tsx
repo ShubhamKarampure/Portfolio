@@ -9,29 +9,28 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { AIPlaceholder } from "../main/ai-placeholder";
-import Image from "next/image";
 
 const HeroContent = () => {
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-20 w-full z-[20] gap-20"
+      className="flex flex-col md:flex-row items-center justify-center px-4 sm:px-10 lg:px-20 mt-16 sm:mt-20 md:mt-20 w-full z-[20] md:gap-20"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="h-full w-full flex flex-col gap-5 justify-center text-center md:text-start mb-10 md:mb-0">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9] self-center md:self-start"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer | Gen AI Enthusiats
+          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5 inline-block" />
+          <h1 className="Welcome-text text-[13px] inline-block">
+            Fullstack Developer | Gen AI Enthusiast
           </h1>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white max-w-full md:max-w-[600px] text-center md:text-start"
         >
           <span>
             Building
@@ -45,14 +44,14 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-base sm:text-lg text-gray-400 my-5 max-w-full md:max-w-[600px] text-center md:text-start mx-auto md:mx-0"
         >
           I&apos;m a Full Stack Software Engineer with experience in Website,
           Mobile, and Software development. Check out my projects and skills.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] self-center md:self-start"
         >
           Learn More!
         </motion.a>
@@ -60,10 +59,10 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full max-w-[350px] sm:max-w-[450px] md:max-w-[500px] h-full flex justify-center items-center"
       >
-        <div className="flex justify-center border border-hidden rounded-3xl p-4 mt-10 w-[500px] h-[500px] text-center">
-         <AIPlaceholder/>
+        <div className="flex justify-center border border-hidden rounded-3xl p-4 w-full h-[300px] sm:h-[400px] md:h-[500px] text-center">
+          <AIPlaceholder/>
         </div>
       </motion.div>
     </motion.div>

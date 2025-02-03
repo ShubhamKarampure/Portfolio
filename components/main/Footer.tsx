@@ -1,74 +1,28 @@
-import React from "react";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
-
-import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import MagicButton from "../sub/MagicButton";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
-        <div className="w-full flex flex-col items-center justify-center m-auto">
-            <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-                
+    <footer className="w-full pt-20 pb-10 relative" id="contact">
+      <div className="flex text-white flex-col items-center relative z-10">
+        <h1 className="heading lg:max-w-[45vw] text-center">
+          Ready to take <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">your</span> digital
+          presence to the next level?
+        </h1>
+        <p className="text-gray-300 md:mt-10 my-5 text-center">
+          Reach out to me today and let&apos;s discuss how I can help you
+          achieve your goals.
+        </p>
+        <a href="https://www.linkedin.com/in/shubham-karampure" target="_blank" rel="noopener noreferrer">
+          <MagicButton
+            title="Connect on LinkedIn"
+            icon={<FaLinkedin />}
+            position="right"
+          />
+        </a>
+      </div>
+    </footer>
+  );
+};
 
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Community</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Youtube</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Github</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Discord</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">Social Media</div>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <FaYoutube />
-                        <span className="text-[15px] ml-[6px]">Instagram</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxGithubLogo />
-                        <span className="text-[15px] ml-[6px]">Twitter</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                        <RxDiscordLogo />
-                        <span className="text-[15px] ml-[6px]">Linkedin</span>    
-                    </p>
-                </div>
-                <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-                    <div className="font-bold text-[16px]">About</div>
-                   <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                     
-                        <span className="text-[15px] ml-[6px]">Become Sponsor</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                      
-                        <span className="text-[15px] ml-[6px]">Learning about me</span>    
-                    </p>
-                    <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                  
-                        <span className="text-[15px] ml-[6px]">mifwebchain@gmail.com</span>    
-                    </p>
-                </div>
-            </div>
-
-            <div className="mb-[20px] text-[15px] text-center">
-                &copy; WebChain Dev 2023 Inc. All rights reserved
-            </div>
-        </div>
-    </div>
-  )
-}
-
-export default Footer
+export default Footer;

@@ -58,17 +58,15 @@ export const Frontend_skill = [
   
   export const Socials = [
     {
-      name: "Discord",
-      src: "/instagram.svg",
-    },
-    {
-      name: "Facebook",
-      src: "/facebook.svg",
-    },
-    {
-      name: "Instagram",
-      src: "/discord.svg",
-    },
+    name: "Github",
+    src: "/github.svg",
+    href: "https://github.com/ShubhamKarampure",
+  },
+  {
+    name: "LinkedIn",
+    src: "/linkdin.svg",
+    href: "https://www.linkedin.com/in/shubham-karampure",
+  },
   ];
   
 export const database_skill = [

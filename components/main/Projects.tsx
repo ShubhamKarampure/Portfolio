@@ -16,6 +16,7 @@ const Projects = () => {
             src="/learnify.png"
             title="Learnify"
             description="LearniFy is an Hackathon winning AI-powered learning platform built using MERN Stack that enhances education through assessments, gamification, and inclusivity, offering an engaging experience for students and teachers."
+            githubLink="https://github.com/Git1Gud/LearniFy"
           />
         </div>
         <div className="flex-1">
@@ -23,6 +24,7 @@ const Projects = () => {
             src="/shikshasangam.jpg"
             title="ShikshaSangam"
             description="Cross-platform app for student-college alumni interaction built on React, Django and React Native for the Technical Education Department of Rajasthan"
+          githubLink="https://github.com/ShubhamKarampure/ShikshaSangam"
           />
         </div>
         
@@ -31,6 +33,7 @@ const Projects = () => {
             src="/algograph.png"
             title="Algograph DSA learning platform"
             description="Algograph built using Next.js is a hackathon winning website which helps student learn DSA using visualization, quizes and one-platform coding sheets."
+          githubLink="https://github.com/ShubhamKarampure/Algograph"
           />
         </div>
       </div>
@@ -40,6 +43,7 @@ const Projects = () => {
             src="/signlingo.png"
             title="Sign Language Learning Platform"
             description="Streamlit-based web app for teaching sign language through real-time hand gesture recognition"
+         githubLink="https://github.com/ShubhamKarampure/asl-streamlit-signlingo"
           />
         </div>
         <div className="flex-1">
@@ -47,6 +51,7 @@ const Projects = () => {
             src="/fit-track.png"
             title="Fit-Track"
             description="Build using MERN stack fittrack allows users to log workouts, meals, track progress, and receive personalized health tips to help achieve their fitness goals."
+          githubLink="https://github.com/ShubhamKarampure/FitTrack"
           />
         </div>
         <div className="flex-1">
@@ -54,6 +59,7 @@ const Projects = () => {
             src="/pacman.png"
             title="Classic Pacman Arcade"
             description="This was the first project I built using python pybag library. I used various dsa concepts to build it from scratch"
+          githubLink="https://github.com/ShubhamKarampure/pacman_game"
           />
         </div>
       </div>

@@ -31,7 +31,7 @@ const Navbar = () => {
             <a href="#projects" className="cursor-pointer">
               Projects
             </a>
-             <a href="#projects" className="cursor-pointer">
+             <a href="#certificates" className="cursor-pointer">
               Certificates
             </a>
           </div>
@@ -39,13 +39,15 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
+            <a href={social.href}>
             <Image
               src={social.src}
               alt={social.name}
               key={social.name}
               width={24}
               height={24}
-            />
+              />
+              </a>
           ))}
         </div>
       </div>

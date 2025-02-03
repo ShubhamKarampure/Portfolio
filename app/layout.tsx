@@ -7,7 +7,7 @@ import { BackgroundBeams } from "@/components/main/background-beams";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
+  title: "Portfolio",
   description: "This is my portfolio",
 };
 
@@ -30,3 +30,4 @@ export default function RootLayout({
     </html>
   );
 }
+
