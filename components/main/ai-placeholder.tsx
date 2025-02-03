@@ -6,7 +6,7 @@ import { SyncLoader } from 'react-spinners';
 const API_URL = 'https://resume-api-one.vercel.app/about-me';
 
 export function AIPlaceholder(): JSX.Element {
-  const [message, setMessage] = useState<string>("Ask anything about me!");
+  const [message, setMessage] = useState<string>("Type anything you want to know about me!");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
 
