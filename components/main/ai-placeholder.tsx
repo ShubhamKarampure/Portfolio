@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { PlaceholdersAndVanishInput } from "../sub/vanish-placeholder";
 import { TextGenerateEffect } from '../sub/text-generate-effect';
 import { SyncLoader } from 'react-spinners';
+
 const API_URL = 'https://resume-api-one.vercel.app/about-me';
 
 export function AIPlaceholder(): JSX.Element {
@@ -49,19 +50,18 @@ export function AIPlaceholder(): JSX.Element {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto h-[450px] border-2 border-white rounded-xl flex flex-col">
+    <div className="w-full max-w-2xl mx-auto h-[450px] border-2 border-white rounded-xl flex flex-col bg-[#030014]">
       <div className="flex-1 overflow-y-auto p-4 space-y-4 relative">
         {isLoading ? (
           <div className="absolute inset-0 flex items-center justify-center">
             <SyncLoader speedMultiplier={0.7} size={30} color='white'/>
-           
           </div>
         ) : error ? (
           <div className="absolute inset-0 flex items-center justify-center p-7 text-red-500">
             {error}
           </div>
         ) : (
-          <div className="absolute inset-0 flex text-white items-center justify-center p-7">
+          <div className="absolute inset-0 flex items-center justify-center p-7 text-white">
             <TextGenerateEffect words={message} />
           </div>
         )}
