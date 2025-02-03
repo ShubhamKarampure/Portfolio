@@ -37,7 +37,6 @@ export function AIPlaceholder(): JSX.Element {
       const data = await response.json();
       setMessage(data.response);
 
-      // Reset message after 20 seconds
       setTimeout(() => {
         setMessage("Ask anything about me!");
       }, 10000);
@@ -62,7 +61,7 @@ export function AIPlaceholder(): JSX.Element {
             {error}
           </div>
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center p-7">
+          <div className="absolute inset-0 flex text-white items-center justify-center p-7">
             <TextGenerateEffect words={message} />
           </div>
         )}
